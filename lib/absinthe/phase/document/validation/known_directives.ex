@@ -41,8 +41,8 @@ defmodule Absinthe.Phase.Document.Validation.KnownDirectives do
   defp check_directives(node) do
     placement = Blueprint.Directive.placement(node)
 
-    IO.inspect(placement, label: :check_directives_placement)
-    IO.inspect(node, label: :check_directives_node)
+    IO.inspect(placement, label: :check_directives_placement_in_document)
+    IO.inspect(node, label: :check_directives_placement_in_document)
 
     directives =
       for directive <- node.directives do
